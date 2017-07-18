@@ -28,14 +28,25 @@
 			<div class="bodyWrapper">	
 				<!--Main Content-->
 				<section id="bodyContent">
-				<!--About Me-->
-					<div id="aboutMe">
-						<h2>About Me</h2>
-						<img src="assets/images/cats-h-c-250-300-9.jpg" height="300px" width="250px">
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui est et expedita distinctio.
-						<br>
-						<br>
-						Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+				<!--Full Form Box-->
+					<div id="formFull">
+						<h2>Contact Me</h2>
+						<!--Actual Contct Form-->
+						<div id="contactForm">
+							<form action="/action_page.php">
+								<!--Name Box-->		
+    							<label for="name">Name</label><br>
+    							<input type="text" id="name" name="name" placeholder="Ozzy O. Osbourne">
+    							<!--Email Box-->
+    							<label for="email">Email</label><br>
+   								<input type="text" id="email" name="email" placeholder="ozzy@osbourne.com">
+								<!--Additional Comments Box-->	
+								<label for="message">Message</label>
+   								<textarea id="message" name="message" style="300px" placeholder="So I started this band..."></textarea>
+								<!--Submit Button-->
+    							<input type="submit" value="Submit">
+ 							</form>
+ 						</div>
 					</div>
 					<!--Side Bar-->
 					<div id="sideBar">
