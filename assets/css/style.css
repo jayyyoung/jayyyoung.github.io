@@ -33,6 +33,7 @@
 	font-size:200%;
 	font-weight: bold;
 	margin:0;
+	float:left;
 }
 
 #mainLogo h1 {
@@ -52,15 +53,14 @@
 /*NAVBAR CSS START*/
 .navBar {
     overflow: hidden;
-    width: 100%;
-    margin-top:-29px;
+    margin-top:30px;
     padding-bottom:13px;
+    float:right;
 }
 
 .navBar ul {
 	margin-bottom:;
 	padding-bottom:;
-	float:right;
 }
 
 .navBar ul li {
@@ -72,7 +72,7 @@
 	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size:100%;
 	color:#777777;
-	border-right:1px solid #777777;
+	border-//right:1px solid #777777;
 }
 
 .navBar a {
@@ -82,6 +82,16 @@
 
 .navBar a:hover {
 	color:#4aaaa5;
+}
+
+#aboutBorder {
+	border-right:1px solid #cccccc;
+	padding-right:15px;
+}
+
+#portfolioBorder {
+	border-right:1px solid #cccccc;
+	padding-right:15px;
 }
 /*NAVBAR CSS END*/
 
