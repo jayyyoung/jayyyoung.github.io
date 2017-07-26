@@ -1,119 +1,69 @@
 /*FULL SITE CSS*/
-.full {
-	background-image:url("../images/kindajean_@2X.png");
-	margin:0;	
-	padding:0;
+.allPage {
+	min-height:100%;
+	height:100%;
+	margin: 0 auto -80px;
 }
-
-.topWrap {
-	background-color: #fff;
-    overflow: hidden;
-    width: 100%;
-    border-bottom: 2px solid #ccc;
-}
-
-#topBar {
-	width:960px;
-	/*border-bottom:2px solid #cccccc;*/
-	padding:0;
-	margin:0 auto;
-	background:#ffffff;
-}
-
-
+ body {
+ 	background-image:url("../images/kindajean_@2X.png");
+ }
 
 /*LOGO CSS START*/
-#mainLogo {
-	background-color:#4aaaa5;
-	width:250px;
-	text-align:center;
-	padding:10px 0px 10px 0px;
-	font-family: 'Georgia', serif;
-	color:#fff;
-	font-size:200%;
-	font-weight: bold;
-	margin:0;
-	float:left;
+/*container-fluid {
+	background-color:#fff;
+	border-bottom:3px solid #ccc;
+}
+*/
+.navbar {
+	min-width:100%;
 }
 
-#mainLogo h1 {
-	background-color:#4aaaa5;
-	width:250px;
-	text-align:center;
-	padding:10px 0px 10px 0px;
-	font-family: 'Georgia', Times, Times New Roman, serif;
+.navbar-header {
+	background-color:#4aaaa5; 
+}
+
+.navbar-header h2 {
 	color:#fff;
-	font-size:90%;
-	margin:0;
+	font-size:28px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+ 	font-weight:bold;
+ 	padding-right:10px;
+ 	padding-left:10px;
+ 	padding-bottom:10px;
+ 	min-width:100%;
 }
 /*LOGO CSS END*/
 
 
 
 /*NAVBAR CSS START*/
-.navBar {
-    overflow: hidden;
-    margin-top:30px;
-    padding-bottom:13px;
-    float:right;
+.navbar-default {
+	background-color:#fff;
+	border:0px;
 }
 
-.navBar ul {
-	margin-bottom:;
-	padding-bottom:;
-}
-
-.navBar ul li {
-	padding-right:10px;
-	padding-left:10px;
-	float:left;
-	display:inline-block;
-	list-style: none;
-	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size:100%;
-	color:#777777;
-	border-//right:1px solid #777777;
-}
-
-.navBar a {
-	text-decoration:none;	
-	color:#777777;
-}
-
-.navBar a:hover {
-	color:#4aaaa5;
-}
-
-#aboutBorder {
-	border-right:1px solid #cccccc;
-	padding-right:15px;
-}
-
-#portfolioBorder {
-	border-right:1px solid #cccccc;
-	padding-right:15px;
+.navbar-default .navbar-nav>li>a {
+	font-size:16px;
+	margin-top:10px;
 }
 /*NAVBAR CSS END*/
 
 
 /*BODY CONTENT BOX CSS*/
 .bodyWrapper {
-	width:960px;
 	overflow: hidden;
 	margin:0 auto;
 }
 
 #bodyContent {
-	width:960px;
 	margin-top:40px;
-	float:left;
 }
 
 
 
 /*ABOUT ME CSS START*/
 #aboutMe {
-	width:650px;
+
 	background-color:#ffffff;
 	border:1px solid #dddddd;
 	float:left;
@@ -125,12 +75,11 @@
 	font-size:165%;
 	font-weight:bold;
 	text-align:left;
-	width:590px;
 	border-bottom:3px solid #cccccc;
 	color:#4aaaa5;
 	padding-bottom:30px;
 	padding-top:35px;
-	margin:0 auto;
+	margin:0% 5%;
 }
 
 #aboutMe img {
@@ -142,7 +91,7 @@
 }
 
 #aboutMe p {
-	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+ 	font-family: 'Droid Sans', sans-serif;
 	font-size:100%;
 	color:#777777;
 	padding-left:30px;
@@ -153,35 +102,50 @@
 }
 /*ABOUT ME CSS END*/
 
-
-
-/*START OF PORTFOLIO DISPLAY CSS*/
-#portfolio {
-	width:650px;
+.portfolioBox {
 	background-color:#ffffff;
 	border:1px solid #dddddd;
 	float:left;
 	margin-bottom:40px;
 }
 
-#portfolio h2 {
+.portfolioBox h2 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size:165%;
 	font-weight:bold;
 	text-align:left;
-	width:590px;
 	border-bottom:3px solid #cccccc;
 	color:#4aaaa5;
 	padding-bottom:30px;
 	padding-top:35px;
-	margin:0 auto;
+	margin:0% 5%;
+}
+
+#aboutMe img {
+	float:left;
+	padding-left:30px;
+	padding-right:10px;
+	padding-top:35px;
+	/*border:10px solid #ffffff;*/
+}
+
+#aboutMe p {
+ 	font-family: 'Droid Sans', sans-serif;
+	font-size:100%;
+	color:#777777;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:30px;
+	padding-bottom:40px;
+	line-height:150%;
 }
 
 
+
+/*START OF PORTFOLIO DISPLAY CSS*/
 /*IMAGE 1 CSS START*/
 #boxLabel1 {
-	width:250px;
-	height:50px;
+	
 	background-color:#4aaaa5;
 	position:absolute;
 	z-index:1;
@@ -197,10 +161,8 @@
 }
 
 #image1 {
-	height:175px;
-	width:250px;
-	border:1px solid #cccccc;
-	float:left;
+	
+	border:1px solid #cccccc;	
 	margin-left:30px;
 	margin-top:35px;
 }
@@ -208,8 +170,7 @@
 
 /*IMAGE 2 CSS START*/
 #boxLabel2 {
-	width:250px;
-	height:50px;
+	
 	background-color:#4aaaa5;
 	position:absolute;
 	z-index:1;
@@ -225,24 +186,27 @@
 }
 
 #image2 {
-	height:175px;
-	width:250px;
+	
 	border:1px solid #cccccc;
-	float:left;
 	margin-left:86px;
 	margin-top:35px;
 }
 /*IMAGE 2 CSS END*/
 
 /*IMAGE 3 CSS START*/
-#boxLabel3 {
-	width:250px;
-	height:50px;
+.portfolioWrap p{
 	background-color:#4aaaa5;
-	position:absolute;
-	z-index:1;
-	margin-top:110px;
+	text-align: center;
+	color:#fff;
+	padding:5px 20px;
+	margin:0px%;
+	width:100%;
 }
+
+.portfolioWrap img{
+	width:100%;
+}
+
 
 #boxLabel3 p {
 	font-family: 'Georgia', Times, Times New Roman, serif;
@@ -323,7 +287,6 @@
 
 /*START CONTACT FORM CSS*/
 #formFull {
-	width:650px;
 	background-color:#ffffff;
 	border:1px solid #dddddd;
 	float:left;
@@ -335,7 +298,6 @@
 	font-size:165%;
 	font-weight:bold;
 	text-align:left;
-	width:590px;
 	border-bottom:3px solid #cccccc;
 	color:#4aaaa5;
 	padding-bottom:30px;
@@ -345,9 +307,12 @@
 
 #contactForm {
 	margin:0 auto;
-	width:590px;
 	padding-bottom:40px;
 	padding-top:30px;
+}
+
+.contactContainer {
+	width:100%;
 }
 
 	/*OVERALL FORM START*/
@@ -368,7 +333,7 @@ input[type=text], select, textarea {
 
 	/*START "NAME BOX"*/
 label[for="name"] {				
-    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+ 	font-family: 'Droid Sans', sans-serif;
     color:#777777;
     margin-left:0px;
     font-size:18px;
@@ -377,7 +342,7 @@ label[for="name"] {
 
 input[placeholder="Your full name..."] {
 	font-size:12px;
-    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+ 	font-family: 'Droid Sans', sans-serif;
 	padding-bottom:10px;
 	padding-left:10px;	
 }						
@@ -385,7 +350,7 @@ input[placeholder="Your full name..."] {
 
 	/*START "EMAIL BOX"*/
 label[for="email"] {				
-    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+ 	font-family: 'Droid Sans', sans-serif;
     color:#777777;
     margin-left:0px;
     font-size:18px;
@@ -394,7 +359,7 @@ label[for="email"] {
 
 input[placeholder="yadayadayada@gmail.com"] {
 	font-size:12px;
-    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+ 	font-family: 'Droid Sans', sans-serif;
 	padding-bottom:10px;
 	padding-left:10px;	
 }					
@@ -402,7 +367,7 @@ input[placeholder="yadayadayada@gmail.com"] {
 
 	/*START "COMMENT BOX*/
 label[for=message] {
-    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+ 	font-family: 'Droid Sans', sans-serif;
     color:#777777;
     margin-left:0px;
     font-size:18px;
@@ -410,7 +375,7 @@ label[for=message] {
 
 textarea[placeholder="What you want to say..."] {
 	font-size:12px;
-    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+ 	font-family: 'Droid Sans', sans-serif;
 	padding-bottom:10px;
 	padding-left:10px;	
 }		
@@ -440,11 +405,9 @@ input[type=submit]:hover {
 
 /*SIDEBAR CSS START*/
 #sideBar {
-	width:270px;
 	background-color:#ffffff;
 	border:1px solid #dddddd;
-	float:left;
-	margin-left:36px;
+	margin-bottom:35px;
 }
 
 #sideBar h2 {
@@ -458,38 +421,60 @@ input[type=submit]:hover {
 	padding-bottom:20px;
 	padding-top:25px;
 	margin:0 auto;
+	text-align:center;
 }
 
 #linkIcons {
-	padding-left:29px;
-
+	width:100%;
+	margin-left:7%;
+	margin-top:4%;
+	margin-bottom:4%;
 }
 
 #linkIcons img {
-	padding-right: 15px;
-	padding-bottom:35px;
-	padding-top:30px;
+	margin-left:15px;
 }
 /*END SIDEBAR CSS*/
 
 
 
 /*FOOTER CSS START*/
-footer {
-	background-color:#666;
-	border-top:8px solid #4aaaa5;
-	padding-top:40px;
-	padding-bottom:40px;
-	margin:0 auto;
-	position:sticky;
-	bottom:0;
-	min-height: 100%;
-	z-index:2;
+#push, #footer {
+	height:80px;
 }
 
-footer p {
+#footer {
+  width:100%;
+  /* Set the fixed height of the footer here */
+  background-color:#666;
+  border-top:7px solid #4aaaa5;	
+  position:relative;
+}
+
+#footer p {
 	color:#ffffff;
 	text-align: center;
 	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 75%;
+	font-size: 100%;
+	padding-top:30px;
+}
+
+
+@media screen and (max-width: 992px) {
+#sideBar h2 {text-align:center;}
+#linkIcons {margin-left:27%; margin-top:20px; padding-bottom: 15px}
+}
+	
+@media screen and (max-width: 768px) {
+.nav_items {text-align:center;}
+.nav_name {text-align:center;}
+#aboutMe h2 {text-align:center;}
+#aboutMe img {margin:0% 10%; width:80%;}
+#formFull h2 {text-align:center;}
+#sideBar h2 {text-align:center;}
+}
+
+@media screen and (max-width: 480px) {
+.aboutMe p {text-align:center; clear:both;}
+.aboutMe img {margin: 0 auto;}
 }

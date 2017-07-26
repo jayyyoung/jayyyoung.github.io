@@ -3,67 +3,77 @@
 	<head>
 		<title>Jason Young Portfolio</title>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		
+		<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 	
 	<body>
-		<div class="full">
-			<!--Logo and Navigation-->
-			<div class="topWrap">
-				<header id="topBar">
-					<!--Main Logo-->
-					<div id="mainLogo">	
-						<h1>Jason Young</h1>
-					</div>	
-					<!--Nav Bar-->
-					<div class="navBar">	
-						<ul>
-							<li><a href="index.html"><div id="aboutBorder">About</div></a></li>					
-							<li><a href="portfolio.html"><div id="portfolioBorder">Portfolio</div></a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</header>
-			</div>	
+			<nav class="navbar navbar-default">
+  					<div class="container-fluid">
+  						<!-- LOGO -->
+   						<div class="nav_name pull-left col-xs-12 col-sm-6 col-md-4">
+   						 <!-- Brand and toggle get grouped for better mobile display -->
+    						<div class="navbar-header">
+								<h2>Jason Young</h2>
+    						</div>
+						</div>
+    					<!-- Collect the nav links, forms, and other content for toggling -->
+    					<div class="nav_items col-xs-12 col-sm-6 col-md-8">
+      						<ul class="nav navbar-nav navbar-right">
+	  							<li><a href="index.html">About</a></li>
+	   							<li><a href="portfolio.html">Portfolio</a></li>
+	  							<li><a href="contact.html">Contact</a></li>
+      						</ul>
+    					</div><!-- /.navbar-collapse -->
+  					</div><!-- /.container-fluid -->
+				</nav>	
+		<div class="container">	
 			<div class="bodyWrapper">	
 				<!--Main Content-->
 				<section id="bodyContent">
 				<!--Full Form Box-->
-					<div id="formFull">
+					<div id="formFull" class="contactBox col-xs-12 col-sm-12 col-md-7">
 						<h2>Contact Me</h2>
 						<!--Actual Contct Form-->
 						<div id="contactForm">
-							<form action="/action_page.php">
-								<!--Name Box-->		
-    							<label for="name">Name</label>
-    							<input type="text" id="name" name="name" placeholder="Your full name...">
-    							<!--Email Box-->
-    							<label for="email">Email</label>
-   								<input type="text" id="email" name="email" placeholder="yadayadayada@gmail.com">
-								<!--Additional Comments Box-->	
-								<label for="message">Message</label>
-   								<textarea id="message" name="message" style="height:200px" placeholder="What you want to say..."></textarea>
-								<!--Submit Button-->
-    							<input type="submit" value="Submit">
- 							</form>
+							<form>							
+								<div class="form-group">
+    								<label for="name">Name</label>
+    								<input type="name" class="form-control" id="name">
+  								</div>
+ 								<div class="form-group">
+    								<label for="email">Email</label>
+   									<input type="email" class="form-control" id="email">
+  								</div>
+  								<div class="form-group">
+    								<label for="message">Message</label>
+    								<textarea class="form-control" id="exampleTextarea" rows="4"></textarea>
+  								</div>
+  								<button type="submit" class="btn btn-primary">Submit</button>
+							</form>
  						</div>
 					</div>
 					<!--Side Bar-->
-					<div id="sideBar">
+					<div id="sideBar" class="col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-1 col-md-4">
 						<h2>Connect With Me</h2>
 						<div id="linkIcons">	
 							<a href="https://github.com/jayyyoung" target="_blank"><img src="assets/images/github-512.png" alt="GitHub Logo" width="60" height="60"></a>
 							<a href="https://www.linkedin.com/in/jasonyoungdesign/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn Logo" width="60" height="60"></a>
 							<a href="https://stackoverflow.com/users/8279889/jason-young" target="_blank"><img src="assets/images/icon-stackoverflow.svg" alt="Stack Overflow Logo" width="60" height="60"></a>
-						</div>	
+						</div>		
 					</div>
 				</section>
 			</div>
 			<!--Footer-->
-			<footer>
-				<p>© Copyright 2017 Jason Young</p>
-			</footer>			
+			<div id="footer">
+				<div class="footerWrap">
+					<p>© Copyright 2017 Jason Young</p>
+				</div>	
+			</div>		
 		</div>
 	</body>
 </html>

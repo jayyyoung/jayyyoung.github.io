@@ -3,36 +3,45 @@
 	<head>
 		<title>Jason Young Portfolio</title>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		
+		<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 	
 	<body>
-		<div class="full">
+			<nav class="navbar navbar-default">
+  					<div class="container-fluid">
+  						<!-- LOGO -->
+   						<div class="nav_name pull-left col-xs-12 col-sm-6 col-md-4">
+   						 <!-- Brand and toggle get grouped for better mobile display -->
+    						<div class="navbar-header">
+								<h2>Jason Young</h2>
+    						</div>
+						</div>
+    					<!-- Collect the nav links, forms, and other content for toggling -->
+    					<div class="nav_items col-xs-12 col-sm-6 col-md-8">
+      						<ul class="nav navbar-nav navbar-right">
+	  							<li><a href="index.html">About</a></li>
+	   							<li><a href="portfolio.html">Portfolio</a></li>
+	  							<li><a href="contact.html">Contact</a></li>
+      						</ul>
+    					</div><!-- /.navbar-collapse -->
+  					</div><!-- /.container-fluid -->
+				</nav>	
+			<div class="container">
 			<!--Logo and Navigation-->
-			<div class="topWrap">
-				<header id="topBar">
-					<!--Main Logo-->
-					<div id="mainLogo">	
-						<h1>Jason Young</h1>
-					</div>	
-					<!--Nav Bar-->
-					<div class="navBar">	
-						<ul>
-							<li><a href="index.html"><div id="aboutBorder">About</div></a></li>					
-							<li><a href="portfolio.html"><div id="portfolioBorder">Portfolio</div></a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</header>
-			</div>	
+				<!--START OF NAVBAR-->
+				
 			<div class="bodyWrapper">	
 				<!--Main Content-->
 				<section id="bodyContent">
 				<!--About Me-->
-					<div id="aboutMe">
+					<div id="aboutMe" class="aboutMe col-xs-12 col-sm-12 col-md-7">
 						<h2>About Me</h2>
-						<img src="assets/images/aboutPicture.png" alt="Me" height="300" width="250">
+						<img src="assets/images/aboutPicture.png" alt="Me">
 						<!--About me paragraph-->
 						<p>Mucho gusto, me llamo Jason. I am 24 years old living out of Wickliffe, OH, a suburb of beautiful Cleveland. I have lived here my whole life and enjoy the massive changes in weather on a daily basis. I am a recent graduate of the University of Akron with a degree in graphic design, something I am currently employed in. I work for an online advertising/marketing company called Edge of the Box where manage and maintain auto dealership websites and produce their online advertising. 
 						<br>
@@ -40,7 +49,8 @@
 						I am currently enrolled in the Case Western Reserve University's Coding Bootcamp where I look to excel in the world of, well, coding and web development. As of right now, I tend to lean towards the front-end of a website, making things look pretty. I am an artist at heart so I think that is where that stems from. All in all I hope to learn everything I can from Bootcamp and succeed in my endeavors from it.</p>
 					</div>
 					<!--Side Bar-->
-					<div id="sideBar">
+
+					<div id="sideBar" class="col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-1 col-md-4">
 						<h2>Connect With Me</h2>
 						<div id="linkIcons">	
 							<a href="https://github.com/jayyyoung" target="_blank"><img src="assets/images/github-512.png" alt="GitHub Logo" width="60" height="60"></a>
@@ -50,10 +60,15 @@
 					</div>
 				</section>
 			</div>
+			<div id="push"></div>
+		</div>	
 			<!--Footer-->
-			<footer>
-				<p>© Copyright 2017 Jason Young</p>
-			</footer>			
-		</div>
+			
+			<div id="footer">
+				<div class="footerWrap">
+					<p>© Copyright 2017 Jason Young</p>
+				</div>	
+			</div>			
+		
 	</body>
 </html>
