@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="UTF-8">
+  		<title>Crystal Collector</title>
+  		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  		<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Lusitana" rel="stylesheet">
+  		<link rel="stylesheet" href="assets/style.css">
+	</head>
+		
+	<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-xs-offset-3">
+				<div class="headPlate panel panel-default">
+					<h1>Crystal Collector</h1>
+				</div>
+			</div>	
+		</div>
+
+		<!--INSTRUCTIONS-->	
+		<div class="row">
+			<div class="col-xs-6 col-xs-offset-3">
+				<div class="panel panel-default">
+					<p><b>During your travels, you find yourself wandering on an unfamiliar road, driven by an unknown force. This compelling feeling leads you to a cart that is setup in the woods. You see a few gypsies sitting behind a stand and below them on the table are four glowing crystals.</b></p> 
+			
+					<p><i>"Ah, traveler, ye' look weary, why don't ya take a seat over and rest ya self and ya horse."</i></p>
+			
+					<p><b>Still compelled by this unseen force, you and your horse do as they say.</b>
+					</p>
+		
+					<p><i>"While you're 'ere, ya might as well test ya luck. These fo' crystals will represent fo' random numbas, ya self or us will not know these numbas, but by touching them and seein' them adds up, ya might put togetha' what they are by themselves. Match the crystal amounts to the random numba' we give ya and win double the amount you put down. 'Ow a bout et den?"</i></p>
+				</div>
+			</div>	
+		</div>
+
+		<!--NUMBER PANEL-->
+		<div class="row">
+			<div class="col-xs-3 col-xs-offset-3">
+				<div class="square1 panel panel-default" id="computerNumber">
+				Random Number:
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="square2 panel panel-default" id="userNumber">
+				Your Number:
+				</div>
+			</div>
+		</div>
+
+		<!--CRYSTAL PANEL-->
+		<div class="row">
+			<div class="panel panel-default col-xs-6 col-xs-offset-3 crystals" id="crystals">	
+				<!-- <div class="panel panel-default"> -->
+					<!--diamond-->
+					<div class="col-xs-3 crystals" value="diamond">
+						<img src="assets/images/blue.png" alt="diamond" class="img-responsive">
+					</div>
+					<!--ruby-->
+					<div class="col-xs-3 crystals" value="ruby">	
+						<img src="assets/images/red.png" alt="ruby" class="img-responsive">
+					</div>
+					<!--citrine-->	
+					<div class="col-xs-3 crystals" value="citrine">
+						<img src="assets/images/yellow.png" alt="citrine" class="img-responsive">
+					</div>
+					<!--emerald-->	
+					<div class="col-xs-3 crystals" value="emerald">
+						<img src="assets/images/green.png" alt="emerald" class="img-responsive">
+					</div>	
+				<!-- </div> -->	
+			</div>
+		</div>
+
+		<!-- WINS AND LOSSES-->
+		<div class="row">
+			<div class="col-xs-3 col-xs-offset-3">
+				<div class="wins panel panel-default" id="wins">
+				Wins:
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="losses panel panel-default" id="losses">
+				Losses: 
+				</div>
+			</div>
+		</div>
+	</div>	
+
+		<!--START OF JAVASCRIPT-->
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+
+				//VARIABLE LIST
+
+				//wins and losses
+				var wins = 0;
+				var losses = 0;
+
+				//your number and gypsy's number
+				var yourNumber;
+				var gypsyNumber;
+
+				var diamond;
+				var ruby;
+				var citrine;
+				var emerald;
+
+				//Initialize Function
+				function gameStartUp() {
+					yourNumber = 0;
+					gypsyNumber = Math.floor(Math.random() * 84 + 19); 
+					diamond = Math.floor(Math.random() * 12 + 1);
+					ruby = Math.floor(Math.random() * 12 + 1);
+					citrine = Math.floor(Math.random() * 12 + 1);
+					emerald = Math.floor(Math.random() * 12 + 1);
+
+					$('#wins').html("Wins: " + wins);
+					$('#losses').html("Losses: " + losses);	
+					$('#userNumber').html("Your Number: " + yourNumber);
+					$('#computerNumber').html("Gypsy's Number:  " + gypsyNumber);	
+				};
+
+				gameStartUp();
+
+				//win and lose condition/function
+				function winLoseFunction() {
+					if (yourNumber == gypsyNumber) {
+						wins ++;
+						alert("You won and have stunned the Gypsies!")
+						gameStartUp();
+					}
+
+					if (yourNumber > gypsyNumber) {
+						losses ++;
+						alert("You lost and the Gypsies have taken your money!");		
+						gameStartUp();
+					}
+				};
+
+				//gameplay functions
+				$('.crystals').off('click').on('click', function() {
+					var crystalPressed = $(this).attr("value");
+
+					if (crystalPressed == "diamond") {
+						yourNumber += diamond;
+
+					};
+
+					if (crystalPressed == "ruby") {
+						yourNumber += ruby;
+
+					};
+
+					if (crystalPressed == "citrine") {
+						yourNumber += citrine;
+
+					};
+
+					if (crystalPressed == "emerald") {
+						yourNumber += emerald;
+
+					};
+
+					$('#userNumber').html("Your Number: " + yourNumber);
+
+					winLoseFunction();
+				});
+
+				
+			});
+
+		</script>
+	</body>
+</html>

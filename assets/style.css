@@ -1,0 +1,89 @@
+body {
+	background-image: url("images/forest_painting-wallpaper-1680x1050.jpg");
+	background-repeat: none;
+	height:100%;
+}
+
+/*CSS FOR THE PANELS*/
+.panel {
+	background-image: url("images/subtle_white_mini_waves.png");
+}
+
+.panel h1 {
+	text-align:center;
+	font-family: 'Berkshire Swash', cursive;
+	font-size:350%;
+	padding-bottom:10px;
+	color:#0b6d70;
+}
+
+.panel p {
+	padding:10px;
+	font-family: 'Lusitana', serif;
+	color:#0b6d70;
+}
+
+.headPlate {
+	margin-top:20px;
+}
+
+.square1 {
+	font-family: 'Lusitana', serif;
+	font-size:125%;
+	text-align:center;
+}
+
+
+.square2 {
+	font-family: 'Lusitana', serif;
+	font-size:125%;
+	text-align: center;
+}
+
+#computerNumber {
+	font-family: 'Lusitana', serif;
+	font-size:130%;
+	text-align:center;
+	color:#0b6d70;
+}
+
+#userNumber {
+	font-family: 'Lusitana', serif;
+	font-size:130%;
+	text-align:center;
+	color:#0b6d70;
+}
+
+.wins {
+	font-family: 'Lusitana', serif;
+	font-size:130%;
+	text-align:center;
+	margin-top:-15px;
+	margin-bottom:25px;
+	color:#0b6d70;
+}
+
+
+.losses {
+	font-family: 'Lusitana', serif;
+	font-size:130%;
+	text-align: center;
+	margin-top:-15px;
+	margin-bottom:25px;
+	color:#0b6d70;
+}
+
+#crystals {
+	display:block;
+	margin-bottom:40px;
+	padding:10px 0px;
+}
+
+#crystals img {
+	display:block;
+	padding-left:28px;
+}
+
+#crystals img:hover {
+	cursor:pointer;
+}
